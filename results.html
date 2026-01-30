@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Event Portfolio - Belle Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Belle Collective Event Planning Establishment</h1>
+            <p>Your personalized event portfolio.</p>
+        </div>
+
+        <div class="results-section show">
+            <div class="results-header">
+                <h2>Your Event Portfolio</h2>
+                <button class="regenerate-btn" id="backBtn">Create New Portfolio</button>
+            </div>
+            
+            <div class="results-content">
+                <div class="portfolio-section">
+                    <h3>Event Overview</h3>
+                    <div class="portfolio-item">
+                        <p><strong>Event Type:</strong> <span id="eventType"></span></p>
+                        <p><strong>Location:</strong> <span id="location"></span></p>
+                        <p><strong>Number of Guests:</strong> <span id="guestCount"></span></p>
+                        <p><strong>Budget:</strong> $<span id="budget"></span></p>
+                        <p id="dateSection" style="display: none;"><strong>Preferred Date:</strong> <span id="eventDate"></span></p>
+                        <p id="themeSection" style="display: none;"><strong>Theme:</strong> <span id="theme"></span></p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Venue Recommendations</h3>
+                    <div class="portfolio-item">
+                        <p><strong>Venue 1:</strong> [Venue name and details]</p>
+                        <p class="item-description">Description and why it fits your event</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Venue 2:</strong> [Venue name and details]</p>
+                        <p class="item-description">Description and why it fits your event</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Venue 3:</strong> [Venue name and details]</p>
+                        <p class="item-description">Description and why it fits your event</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Catering Options</h3>
+                    <div class="portfolio-item">
+                        <p><strong>Caterer 1:</strong> [Caterer name]</p>
+                        <p class="item-description">Menu style and specialties</p>
+                        <p class="item-price">Estimated cost per person: $XX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Caterer 2:</strong> [Caterer name]</p>
+                        <p class="item-description">Menu style and specialties</p>
+                        <p class="item-price">Estimated cost per person: $XX</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Event Coordinator Services</h3>
+                    <div class="portfolio-item">
+                        <p><strong>Coordinator 1:</strong> [Company/Person name]</p>
+                        <p class="item-description">Services offered and experience</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Coordinator 2:</strong> [Company/Person name]</p>
+                        <p class="item-description">Services offered and experience</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Essential Services</h3>
+                    <div class="portfolio-item">
+                        <p><strong>Photography:</strong></p>
+                        <p class="item-description">[Photographer recommendations and packages]</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Entertainment:</strong></p>
+                        <p class="item-description">[DJ, band, or entertainment options]</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Decorations & Florals:</strong></p>
+                        <p class="item-description">[Florist and decoration services]</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>Rentals:</strong></p>
+                        <p class="item-description">[Furniture, linens, equipment rentals]</p>
+                        <p class="item-price">Estimated cost: $X,XXX</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Budget Breakdown</h3>
+                    <div class="portfolio-item">
+                        <table class="budget-table">
+                            <tr>
+                                <td><strong>Venue:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Catering:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Event Coordinator:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Photography:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Entertainment:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Decorations & Florals:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rentals:</strong></td>
+                                <td>$X,XXX (XX%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contingency (10%):</strong></td>
+                                <td>$X,XXX</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>Total:</strong></td>
+                                <td><strong>$<span id="totalBudget"></span></strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Planning Timeline</h3>
+                    <div class="portfolio-item">
+                        <p><strong>12+ Months Before:</strong></p>
+                        <ul>
+                            <li>Book venue</li>
+                            <li>Hire event coordinator</li>
+                            <li>Create guest list</li>
+                            <li>Set budget</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>9-12 Months Before:</strong></p>
+                        <ul>
+                            <li>Book caterer</li>
+                            <li>Hire photographer</li>
+                            <li>Book entertainment</li>
+                            <li>Send save-the-dates</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>6-9 Months Before:</strong></p>
+                        <ul>
+                            <li>Finalize menu</li>
+                            <li>Book florist and decorations</li>
+                            <li>Order rentals</li>
+                            <li>Plan seating arrangements</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>3-6 Months Before:</strong></p>
+                        <ul>
+                            <li>Send formal invitations</li>
+                            <li>Finalize timeline with vendors</li>
+                            <li>Order favors and additional items</li>
+                            <li>Confirm RSVPs</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>1-3 Months Before:</strong></p>
+                        <ul>
+                            <li>Final vendor meetings</li>
+                            <li>Create day-of timeline</li>
+                            <li>Confirm final guest count</li>
+                            <li>Arrange transportation if needed</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item">
+                        <p><strong>1 Week Before:</strong></p>
+                        <ul>
+                            <li>Final venue walk-through</li>
+                            <li>Confirm all vendor arrival times</li>
+                            <li>Pack emergency kit</li>
+                            <li>Distribute timeline to all parties</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <h3>Additional Notes</h3>
+                    <div class="portfolio-item">
+                        <p id="dietaryNotes" style="display: none;"><strong>Dietary Considerations:</strong> <span id="dietary"></span></p>
+                        <p id="additionalNotes" style="display: none;"><strong>Special Requirements:</strong> <span id="additional"></span></p>
+                        <p id="commuteNotes" style="display: none;"><strong>Maximum Commute Distance:</strong> <span id="commuteDistance"></span> miles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="results.js"></script>
+</body>
+</html>
